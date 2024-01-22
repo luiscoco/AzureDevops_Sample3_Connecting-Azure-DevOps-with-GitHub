@@ -60,7 +60,19 @@ You may be prompted to sign into GitHub and authorize Azure Pipelines if you hav
 
 After authorization, select the repository you want to connect to Azure DevOps.
 
-Follow the wizard to configure your pipeline. Azure DevOps will try to automatically detect the language and framework used in your project and suggest a pipeline template.
+We select the Github repo to connect to
+
+![image](https://github.com/luiscoco/AzureDevops_Sample3_Connecting-Azure-DevOps-with-GitHub/assets/32194879/7211f0ef-0d6c-49a9-9bf6-b9deaf884fba)
+
+We automatically navigate to the following page
+
+![image](https://github.com/luiscoco/AzureDevops_Sample3_Connecting-Azure-DevOps-with-GitHub/assets/32194879/1e900144-ccb1-4ab2-8992-197c65e63d9f)
+
+We scroll down and select the repo and press the button **Approve and Install**
+
+![image](https://github.com/luiscoco/AzureDevops_Sample3_Connecting-Azure-DevOps-with-GitHub/assets/32194879/bda79cdb-3ae8-4d2c-adad-a70f479836e2)
+
+
 
 
 ### 3.2. Service Connection Method
