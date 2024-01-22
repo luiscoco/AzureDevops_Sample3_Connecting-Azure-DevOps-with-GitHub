@@ -24,8 +24,9 @@ We select the **Settings** option
 
 ![image](https://github.com/luiscoco/AzureDevops_Sample3_Connecting-Azure-DevOps-with-GitHub/assets/32194879/c6352d7a-7bd7-4d2f-904e-362e036f51f6)
 
-From the sidebar, we select Developer settings > Personal access tokens.
+From the sidebar, we select **Developer settings** -> **Personal access tokens**
 
+![image](https://github.com/luiscoco/AzureDevops_Sample3_Connecting-Azure-DevOps-with-GitHub/assets/32194879/ca8feb1d-792b-41b3-8dfa-f07cb5d597c3)
 
 
 Click on Generate new token.
