@@ -78,6 +78,102 @@ We select the **Starter pipeline** option to input the **yaml** file source code
 
 ![image](https://github.com/luiscoco/AzureDevops_Sample3_Connecting-Azure-DevOps-with-GitHub/assets/32194879/8a889afc-aaed-48a0-ae05-1249605df404)
 
+This is the **yaml file** for **Azure Pipeline**
+
+```
+trigger:
+- main
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+steps:
+- task: UseDotNet@2
+  inputs:
+    version: '8.x'
+    packageType: 'sdk'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    projects: '**/*.csproj'
+    feedsToUse: 'select'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: '**/*.csproj'
+    arguments: '--configuration $(buildConfiguration)'
+
+# Optional: Add steps for running tests here
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
+    arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+    zipAfterPublish: true
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+```
+
+This is the **main.yml** file for **Github actions**
+
+See the gihub repo: https://github.com/luiscoco/Books_API
+
+```yaml
+name: .NET 8 CI Build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Setup .NET 8
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build
+      run: dotnet build --no-restore -c Release
+
+    # Uncomment the following lines if you have tests
+    #- name: Test
+    #  run: dotnet test --no-build -c Release --verbosity normal
+
+    - name: Publish
+      run: dotnet publish -c Release -o ./publish
+
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: published-app
+        path: ./publish
+```
+
 ### 3.2. Service Connection Method
 
 We go to **Project settings** in the bottom left corner of your Azure DevOps project
