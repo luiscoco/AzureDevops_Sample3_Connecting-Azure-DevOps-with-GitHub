@@ -80,8 +80,11 @@ We scroll down and select the repo and press the button **Approve and Install**
 
 ![image](https://github.com/luiscoco/AzureDevops_Sample3_Connecting-Azure-DevOps-with-GitHub/assets/32194879/bda79cdb-3ae8-4d2c-adad-a70f479836e2)
 
+We are redirected to the Azure DevOps to continue with the PipeLine configuration
 
+We select the **Starter pipeline** option to input the **yaml** file source code
 
+![image](https://github.com/luiscoco/AzureDevops_Sample3_Connecting-Azure-DevOps-with-GitHub/assets/32194879/8a889afc-aaed-48a0-ae05-1249605df404)
 
 ### 3.2. Service Connection Method
 
