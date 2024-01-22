@@ -50,7 +50,11 @@ In Azure DevOps, we go to your project and we select **Pipelines** from the left
 
 We click on **Create Pipeline**
 
+![image](https://github.com/luiscoco/AzureDevops_Sample3_Connecting-Azure-DevOps-with-GitHub/assets/32194879/07db76ca-4edf-4abd-af2a-8215a750e789)
+
 We choose **GitHub** as the **code source**
+
+![image](https://github.com/luiscoco/AzureDevops_Sample3_Connecting-Azure-DevOps-with-GitHub/assets/32194879/471da684-e2f1-47f1-b096-8d3a94458485)
 
 You may be prompted to sign into GitHub and authorize Azure Pipelines if you haven't already connected your GitHub account to Azure DevOps.
 
