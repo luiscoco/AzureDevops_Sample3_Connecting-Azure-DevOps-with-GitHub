@@ -28,10 +28,13 @@ From the sidebar, we select **Developer settings** -> **Personal access tokens**
 
 ![image](https://github.com/luiscoco/AzureDevops_Sample3_Connecting-Azure-DevOps-with-GitHub/assets/32194879/ca8feb1d-792b-41b3-8dfa-f07cb5d597c3)
 
+We click on Generate new token.
 
-Click on Generate new token.
+![image](https://github.com/luiscoco/AzureDevops_Sample3_Connecting-Azure-DevOps-with-GitHub/assets/32194879/808f097d-3b11-4c3b-9ba5-fa1638165c0b)
 
-Give your token a descriptive name, select the scopes or permissions you want to grant this token (for Azure DevOps, select repo, admin:repo_hook), and then click Generate token.
+We give your token a descriptive name, select the scopes or permissions you want to grant this token (for Azure DevOps, select repo, admin:repo_hook), and then click Generate token.
+
+
 
 Copy the generated token and save it somewhere secure; you won’t be able to see it again.
 
