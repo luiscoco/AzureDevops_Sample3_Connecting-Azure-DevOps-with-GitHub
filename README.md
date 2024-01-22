@@ -38,17 +38,9 @@ We give your token a descriptive name, select the scopes or permissions you want
 
 ![image](https://github.com/luiscoco/AzureDevops_Sample3_Connecting-Azure-DevOps-with-GitHub/assets/32194879/a67a5c8d-36db-4cf8-b332-4a5925fef552)
 
-We copy the generated token and we save it somewhere secure; you won’t be able to see it again
+We copy the generated **token** and we save it somewhere secure; you won’t be able to see it again
 
 ![image](https://github.com/luiscoco/AzureDevops_Sample3_Connecting-Azure-DevOps-with-GitHub/assets/32194879/83dbac73-b7b8-420d-85f7-933d08f31a70)
-
-We are redirected to continue configuring the Pipeline.
-
-We select the **Starter Pipeline** option to input the **yaml** file code
-
-![image](https://github.com/luiscoco/AzureDevops_Sample3_Connecting-Azure-DevOps-with-GitHub/assets/32194879/a1e95c0c-44f2-48db-a495-846c361f72cb)
-
-
 
 ## 3. Connect Azure DevOps to GitHub
 
