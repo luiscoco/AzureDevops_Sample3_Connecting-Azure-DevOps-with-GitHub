@@ -46,11 +46,11 @@ We copy the generated token and we save it somewhere secure; you won’t be able
 
 ### 3.1. Using Azure Pipelines
 
-In Azure DevOps, we go to your project and select Pipelines from the left navigation panel
+In Azure DevOps, we go to your project and we select **Pipelines** from the left navigation panel
 
-Click on Create Pipeline
+We click on **Create Pipeline**
 
-Choose GitHub as the code source.
+We choose **GitHub** as the **code source**
 
 You may be prompted to sign into GitHub and authorize Azure Pipelines if you haven't already connected your GitHub account to Azure DevOps.
 
@@ -75,7 +75,7 @@ We choose **GitHub** via **Personal Access Token (PAT)**, we enter the PAT you g
 
 ![image](https://github.com/luiscoco/AzureDevops_Sample3_Connecting-Azure-DevOps-with-GitHub/assets/32194879/22d234ee-bf9c-4391-ae83-1edbd6bf982e)
 
-
+![image](https://github.com/luiscoco/AzureDevops_Sample3_Connecting-Azure-DevOps-with-GitHub/assets/32194879/e8809aac-874d-4740-bfa0-104a2d21fcef)
 
 After we setting up the connection, we can use it in your pipelines to access our GitHub repositories
 
