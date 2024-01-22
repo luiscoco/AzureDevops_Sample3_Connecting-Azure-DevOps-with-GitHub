@@ -42,6 +42,14 @@ We copy the generated token and we save it somewhere secure; you won’t be able
 
 ![image](https://github.com/luiscoco/AzureDevops_Sample3_Connecting-Azure-DevOps-with-GitHub/assets/32194879/83dbac73-b7b8-420d-85f7-933d08f31a70)
 
+We are redirected to continue configuring the Pipeline.
+
+We select the **Starter Pipeline** option to input the **yaml** file code
+
+![image](https://github.com/luiscoco/AzureDevops_Sample3_Connecting-Azure-DevOps-with-GitHub/assets/32194879/a1e95c0c-44f2-48db-a495-846c361f72cb)
+
+
+
 ## 3. Connect Azure DevOps to GitHub
 
 ### 3.1. Using Azure Pipelines
