@@ -41,3 +41,35 @@ We give your token a descriptive name, select the scopes or permissions you want
 We copy the generated token and we save it somewhere secure; you won’t be able to see it again
 
 ![image](https://github.com/luiscoco/AzureDevops_Sample3_Connecting-Azure-DevOps-with-GitHub/assets/32194879/83dbac73-b7b8-420d-85f7-933d08f31a70)
+
+## 3. Connect Azure DevOps to GitHub
+
+### 3.1. Using Azure Pipelines
+
+In Azure DevOps, go to your project and select Pipelines from the left navigation panel.
+
+Click on Create Pipeline.
+
+Choose GitHub as the code source.
+
+You may be prompted to sign into GitHub and authorize Azure Pipelines if you haven't already connected your GitHub account to Azure DevOps.
+
+After authorization, select the repository you want to connect to Azure DevOps.
+
+Follow the wizard to configure your pipeline. Azure DevOps will try to automatically detect the language and framework used in your project and suggest a pipeline template.
+
+
+### 3.2. Service Connection Method
+
+We go to **Project settings** in the bottom left corner of your Azure DevOps project
+
+Under **Pipelines**, we select **Service connections**
+
+We click on New service connection and choose GitHub
+
+
+
+We choose GitHub via PAT, we enter the PAT you generated earlier, and we give your connection a name
+
+After we setting up the connection, we can use it in your pipelines to access our GitHub repositories
+
